@@ -1,0 +1,3 @@
+¡Hola Facu! Acá te dejo mis appraoches donde explico algunas decisiones que tomé en el código.
+- En el DAO de users, el método que busca al usuario en la base de datos (que se ejecuta al hacer el login, comprobando si existe el usuario al que se quiere ingresar) utiliza el email para buscarlo, no el nombre, ya que muchas páginas usan el correo electrónico para registrarse (como Github)
+- En la vista del perfil, muestro el email, ya que no lo considero información sensible. En coderhouse, en tu perfil, te muestra tu email, por lo que no lo consideré información sensible (solo consideré a la contraseña)
