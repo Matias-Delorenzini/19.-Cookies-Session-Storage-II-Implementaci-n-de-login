@@ -41,5 +41,8 @@ app.use('/api/cart', cartsRouter)
 app.use('/api/sessions', sessionsRouter)
 app.use('/', viewsRouter)
 
+app.get("/", (req,res) => {
+    res.redirect("http://localhost:8080/login");
+})
 
 app.listen(8080,()=>console.log("Listening on PORT 8080"))
